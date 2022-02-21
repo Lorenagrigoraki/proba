@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	padding-left: 4.8%;
+	padding-right: 4.8%;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	border-bottom: 1px solid #000000;
+	align-items: center;
+}
+header img{
+	height: 22.66px;
+	width: 53.27px;
+}
+header ul{
+	display: flex;
+	width: 320px;
+	justify-content: space-between;	
+}
+header ul  li{
+	list-style: none;
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #737373;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+header li:last-child a{
+	width: 186px;
+	height: 40px;
+	line-height: 24.38px;
+	text-align: center;
+	padding: 8px 60px;
+	color: #FF685B;
+	border: 2px solid #FF685B;
+	border-radius: 7px;
+	font-family: Montserrat, sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+}
+.main-Inf{
+	width: 1046px;
+	margin-left: auto;	
+	margin-right: auto;
+	padding-top: 9%;
+}
+.main-Inf h1{
+	width: 727px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 58px;
+	line-height: 80px;
+	color: #252B42;
+	letter-spacing: 0.2px;
+}
+
+
+.main-Inf .btns{
+	margin-top: 35px;
+	display: flex;
+	width: 293px;
+	justify-content: space-between;	
+}
+.main-Inf .btns  li{
+	list-style: none;
+}
+.main-Inf .btns li a{
+	display: inline-block;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 22px;
+	height: 52px;
+	border-radius: 5px;
+	padding: 15px 40px;
+}
+.main-Inf .btns li:first-child a{
+	color: #ffffff;
+	background: #FF685B;
+	border: 1px solid #FF685B;
+	width: 128px;
+}
+.main-Inf .btns li:last-child a{
+	color: #FF685B;
+	background: #ffffff;
+	border: 1px solid #FF685B;
+	width: 155px;
+	padding: 15px 40px;
+}
+
+.main-Inf .container{
+	margin-top: 96.6px;
+	margin-bottom: 80px;
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(3, 328px);
+	grid-column-gap: 30px;	
+}
+.main-Inf .container .container-item{
+	min-height: 248px;
+	padding: 35px 40px;
+	text-align: left;
+	box-shadow: 0px 13px 19px 0px #00000012;
+	display: grid;
+	grid-row-gap: 20px;
+}
+
+.main-Inf .container .container-item h5{
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+	text-align: left;
+}
+.main-Inf .container .container-item p{
+	font-family: "Montserrat", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #737373;
+	text-align: left;
+}
+
+
+.main-Inf .container .container-item .circle{
+	height: 72px;
+	width: 72px;
+	background: #E74040;
+	border-radius: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-Inf .container .container-item .circle img{
+	
+    width: 32px;
+    height: 32px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1046px) and (orientation: landscape){
+	.main-Inf{
+	width: 100%;
+	padding-left: 4%;
+	padding-right: 4%;
+
+	}
+	.main-Inf .container{
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 30px;	
+	grid-template-rows: repeat(2, 1fr);
+	grid-row-gap: 30px;	
+	}
+	.main-Inf .container .container-item:last-child{
+	grid-column: 1 / span 2;
+}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 769px) and (orientation: portrait) {
+	.main-Inf{
+	width: 100%;
+	padding-left: 3%;
+	padding-right: 3%;
+	}
+	.main-Inf .container{
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(3, 1fr);
+	grid-row-gap: 30px;	
+	}
+	.main-Inf .container .container-item {
+	width: 100%;
+	}
+	.main-Inf h1{	
+	font-size: 48px;
+	line-height: 59px;
+}
+}
+
+@media only screen and (max-width: 480px){
+	.main-Inf{
+	width: 100%;
+	padding-left: 3%;
+	padding-right: 3%;
+	}
+	.main-Inf .container{
+	grid-template-columns: 20% 20% 20%;
+	grid-template-rows: 1fr;
+	grid-row-gap: 30px;	
+	}
+	.main-Inf .container .container-item{
+	width: 328px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+	.main-Inf h1{	
+	font-size: 28px;
+	line-height: 39px;
+}
+}
