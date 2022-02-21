@@ -195,8 +195,8 @@ header li:last-child a{
 	padding-right: 3%;
 	}
 	.main-Inf .container{
-	grid-template-columns: 20% 20% 20%;
-	grid-template-rows: 1fr;
+	grid-template-columns: 328px;
+	grid-template-rows: 1fr 1fr 1fr;
 	grid-row-gap: 30px;	
 	}
 	.main-Inf .container .container-item{
